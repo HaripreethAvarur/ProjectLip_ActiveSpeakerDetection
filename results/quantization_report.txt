@@ -1,0 +1,26 @@
+
+==========================================================
+  Edge Deployment Benchmark — TalkNet Visual Encoder
+  INT8 Dynamic Quantization  (CPU / RPi 4 simulation)
+==========================================================
+
+  Threads : 4 (RPi simulation)
+  Input   : (1, 11, 112, 112)   batch=1, T=11 frames
+  Modules : visualFrontend + visualTCN + visualConv1D
+
+  Metric                           FP32       INT8    Ratio
+  --------------------------------------------------------
+  Model size (MB)                  52.9       52.9     1.0x
+  Mean latency (ms)                85.4       84.9     1.0x
+  Throughput (FPS)                 11.7       11.8     1.0x
+  Std dev (ms)                     3.64       4.38      —
+
+  INT8 is 1.0x faster and 1.0x smaller than FP32.
+  At 12 FPS, the visual encoder uses 255%
+  of a 30-FPS frame budget on RPi 4.
+
+  Note: Conv3D layers (visualFrontend) dominate compute cost
+  and are not quantized by dynamic INT8, which explains the
+  modest speedup. Static quantization with calibration data
+  would yield larger gains on the 3D convolution backbone.
+==========================================================

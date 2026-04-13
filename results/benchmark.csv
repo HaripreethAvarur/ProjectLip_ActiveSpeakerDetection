@@ -1,0 +1,4 @@
+metric,fp32,int8
+size_mb,52.86,52.86
+mean_ms,85.39,84.93
+fps,11.7,11.8
