@@ -11,7 +11,7 @@ Detects who is speaking in a video using TalkNet + Whisper captions + audio-visu
 0. Setup Environment: 
 ```bash
 conda create --name env_projectlip python=3.10
-conda activare env_projectlip
+conda activate env_projectlip
 ```
 
 1. Clone TalkNet:
