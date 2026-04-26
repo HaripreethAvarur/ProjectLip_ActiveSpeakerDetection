@@ -1,0 +1,41 @@
+{
+  "mode": "simulation",
+  "config": {
+    "n_frames": 300,
+    "n_speakers": 2,
+    "min_score_threshold": 0.35
+  },
+  "detection_metrics": {
+    "TP": 227,
+    "FP": 16,
+    "FN": 0,
+    "TN": 57,
+    "Precision": 0.9342,
+    "Recall": 1.0,
+    "F1": 0.966,
+    "Accuracy": 0.9467,
+    "Specificity": 0.7808,
+    "mAP": 0.9864
+  },
+  "identity_accuracy": 1.0,
+  "latency_ms": {
+    "mean_ms": 18.51,
+    "std_ms": 4.02,
+    "p50_ms": 18.66,
+    "p90_ms": 23.55,
+    "p99_ms": 27.16,
+    "min_ms": 8.0,
+    "max_ms": 31.85,
+    "mean_fps": 54.0
+  },
+  "score_stats": {
+    "mean": 0.4056,
+    "std": 0.2655,
+    "min": 0.0,
+    "max": 1.0
+  },
+  "speaking_ratio": {
+    "speaker_0": 0.5167,
+    "speaker_1": 0.24
+  }
+}

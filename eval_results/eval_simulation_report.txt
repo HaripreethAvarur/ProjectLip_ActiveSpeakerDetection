@@ -1,0 +1,27 @@
+ASD Evaluation Report
+==============================================================
+
+Mode   : simulation
+
+Detection Metrics
+----------------------------------------
+  Precision                    0.9342
+  Recall                       1.0000
+  F1                           0.9660
+  Accuracy                     0.9467
+  Specificity                  0.7808
+  mAP                          0.9864
+
+  Confusion matrix: TP=227 FP=16 FN=0 TN=57
+
+  Speaker Identity Accuracy: 1.0000
+
+Latency
+----------------------------------------
+  mean_ms                      18.51
+  p50_ms                       18.66
+  p90_ms                       23.55
+  p99_ms                       27.16
+  mean_fps                     54.00
+
+==============================================================

@@ -1,0 +1,10 @@
+cat > .gitignore << 'EOF'
+TalkNet-ASD/
+*.mp4
+*.avi
+*.model
+*.pth
+*.pt
+__pycache__/
+*.pyc
+EOF

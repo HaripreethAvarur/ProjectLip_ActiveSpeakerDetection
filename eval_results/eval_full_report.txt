@@ -1,0 +1,27 @@
+ASD Evaluation Report
+==============================================================
+
+Mode   : full
+Video  : final_demo.mp4
+Scorer : LightweightVisual
+
+Detection Metrics
+----------------------------------------
+  Precision                    0.5935
+  Recall                       0.9167
+  F1                           0.7205
+  Accuracy                     0.5733
+  Specificity                  0.0583
+  mAP                          0.4948
+
+  Confusion matrix: TP=165 FP=113 FN=15 TN=7
+
+Latency
+----------------------------------------
+  mean_ms                      26.80
+  p50_ms                       23.90
+  p90_ms                       27.73
+  p99_ms                       45.13
+  mean_fps                     37.30
+
+==============================================================

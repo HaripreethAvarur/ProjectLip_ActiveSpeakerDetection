@@ -1,0 +1,39 @@
+{
+  "mode": "full",
+  "video": "final_demo.mp4",
+  "n_frames_processed": 300,
+  "fps_video": 25.0,
+  "scorer": "LightweightVisual",
+  "detection_metrics": {
+    "TP": 165,
+    "FP": 113,
+    "FN": 15,
+    "TN": 7,
+    "Precision": 0.5935,
+    "Recall": 0.9167,
+    "F1": 0.7205,
+    "Accuracy": 0.5733,
+    "Specificity": 0.0583,
+    "mAP": 0.4948
+  },
+  "latency_ms": {
+    "mean_ms": 26.8,
+    "std_ms": 37.42,
+    "p50_ms": 23.9,
+    "p90_ms": 27.73,
+    "p99_ms": 45.13,
+    "min_ms": 19.39,
+    "max_ms": 671.01,
+    "mean_fps": 37.3
+  },
+  "face_stats": {
+    "mean_faces_per_frame": 1.993,
+    "face_detection_rate": 1.0
+  },
+  "score_stats": {
+    "mean": 0.8189,
+    "std": 0.2504,
+    "min": 0.0,
+    "max": 1.0
+  }
+}
