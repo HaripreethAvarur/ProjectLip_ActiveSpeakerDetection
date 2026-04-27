@@ -1,4 +1,4 @@
-# Active Speaker Detection — Recorded Video Pipeline (GPU + TalkNet)
+# Active Speaker Detection - Recorded Video Pipeline (GPU + TalkNet)
 
 Detects who is speaking in a pre-recorded video using TalkNet for visual active speaker detection, WebRTC VAD for audio, and OpenAI Whisper for transcription. Outputs an annotated MP4 with colored bounding boxes around the active speaker and speaker-attributed captions ("Speaker 1: ...").
 
@@ -43,7 +43,7 @@ conda install -c conda-forge ffmpeg -y
 
 ## 1. Recorded Video Demo
 
-### Step 1 — Get the demo video
+### Step 1: Get the demo video
 
 ```bash
 yt-dlp -f "best[ext=mp4][height<=480]" "https://www.youtube.com/watch?v=lhFU5H5KPFE" -o "demo_full.mp4"
@@ -51,7 +51,7 @@ ffmpeg -i demo_full.mp4 -ss 00:00:10 -t 00:01:30 -c copy -y demo_input.mp4
 rm demo_full.mp4
 ```
 
-### Step 2 — Run TalkNet face detection and scoring
+### Step 2: Run TalkNet face detection and scoring
 
 ```bash
 cp demo_input.mp4 TalkNet-ASD/demo/demo_input.mp4
@@ -62,7 +62,7 @@ cd ..
 
 This produces face tracks and per-frame speaking scores saved under `TalkNet-ASD/demo/demo_input/pywork/`.
 
-### Step 3 — Generate annotated output video
+### Step 3: Generate annotated output video
 
 ```bash
 python final_demo.py --video demo_input.mp4
